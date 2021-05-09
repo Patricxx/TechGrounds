@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & Tabellen</title>
+</head>
+<style>
+body{
+    font-family: 'Arial';
+    margin: auto; 
+    margin-top: 5vh;
+    width: 320px; height: 320px;
+    background-color: lightgray;
+}
+
+input{ border: 1px solid;}
+
+td:first-child{ width: 100px;}
+</style>
+<body>
+<h2>Opdracht 1</h2> 
+<fieldset>
+    <table>
+        <tr><td>Achternaam:</td><td><input type="text"></td></tr>
+        <tr><td>Voornaam:</td><td><input type="text"></td></tr>
+      </table> 
+</fieldset>
+<br>
+<br>
+<hr>
+<br>
+<h2>Opdracht 2</h2> 
+<fieldset>>
+    <legend>Input Types</legend> 
+    <input type="button">
+    <input type="checkbox">
+    <input type="color">
+    <input type="date">
+    <input type="datetime-local">
+    <input type="email">
+    <input type="file">
+    <input type="hidden">
+    <input type="image">
+    <input type="month">
+    <input type="number">
+    <input type="password">
+    <input type="radio">
+    <input type="range">
+    <input type="reset">
+    <input type="search">
+    <input type="submit">
+    <input type="tel">
+    <input type="text">
+    <input type="time">
+    <input type="url">
+    <input type="week">
+</fieldset>
+<br>
+<br>
+<hr>
+<br>
+<h2>Opdracht 3</h2> 
+
+<h1>Email Velden</h1>
+
+<h3>Laat een email invulveld zien:</h3>
+<form action="/action_page.php">
+  <label for="email">Emailadres:</label>
+  <input type="email" id="email" name="email">
+  <br>
+  <input type="submit">
+</form>
+<br>
+<hr>
+<br>
+<h2>Opdracht 4</h2> 
+<fieldset>
+    <legend>Persoons Gegevens</legend> 
+    <table>
+        <tr><td>Achternaam:</td><td><input type="text"></td></tr>
+        <tr><td>Voornaam:</td><td><input type="text"></td></tr>
+        <tr><td>Geboortedatum:</td><td><input type="text"></td></tr>
+        <tr><td>M:<input type="radio">V:<input type="radio"></td></tr>
+        <tr><td>Adres:</td><td><input type="text"></td></tr>
+        <tr><td>Postcode:</td><td><input type="text"></td></tr>
+      </table> 
+</fieldset>
+<input type="submit" value="Verstuur"><input type="reset" value="Annuleren">
+<br>
+<br>
+<hr>
+<br>
+<fieldset>
+    <legend>Persoons Gegevens</legend> 
+    <table>
+        <tr><td><for="fname">Achternaam:</td><td><input type="text" id="fname" name="fname" value=" Achternaam"></td></tr>
+        <tr><td><for="lname">Voornaam:</td><td><input type="text" id="lname" name="lname" value=" Voornaam"></td></tr>
+        <tr><td><for="bday">Geboortedatum:</td><td><input type="text" id="bday" name="bday" value=" mm / dd / yyyy"></td></tr>
+        <tr><td><for="male">M:<input type="radio" id="male" name="gender" value="male"><for="fmale">V:<input type="radio" id="fmale" name="gender" value="fmale"></td></tr>
+        <tr><td><for="Address">Adres:</td><td><input type="text" id="address" name="address" value=" Adres"></td></tr>
+        <tr><td><for="zipcode">Postcode:</td><td><input type="text" id="zipcode" name="zipcode" value=" Postcode"></td></tr>
+    </table> 
+</fieldset>
+    <input type="submit" value="Verstuur"><input type="reset" value="Annuleren">
+<br>
+<br>
+<hr>
+<h2>Opdracht 5</h2> 
+<label for="country">Dropdown</label>
+<select id="country" name="country">
+  <option value="Lijst 1">Lijst 1</option>
+  <option value="Lijst 2">Lijst 2</option>
+  <option value="Lijst 3">Lijst 3</option>
+</select>
+  <br>
+<br>
+<hr>
+<br>
+<h2>Opdracht 7</h2> 
+<fieldset>
+    <legend>Sportschool</legend> 
+    <table>
+        <tr><td><for="fname">Achternaam:</td><td><input type="text" id="fname" name="fname" value=" Achternaam"></td></tr>
+        <tr><td><for="lname">Voornaam:</td><td><input type="text" id="lname" name="lname" value=" Voornaam"></td></tr>
+        <tr><td><for="membership">Membership:</td><td>Yes:<input type="radio"> No:<input type="radio"></td></tr>
+        <tr><td><for="email">Email:</td><td><input type="text" id="email" name="email" value=" Email"></td></tr>
+        <tr><td><label for="country">Sportlessen</label></td><td><select id="country" name="country">
+              <option value="Lijst 1">Tafeltennis</option>
+              <option value="Lijst 2">Badminton</option>
+              <option value="Lijst 3">Squash</option>
+            </select></td></tr>
+        <tr><td><for="Date">Datum:</td><td><input type="text" id="date" name="date" value=" dd / mm / jjjj"></td></tr>
+        <tr><td><for="check">Akkoord:</td><td><input type="checkbox"></td></tr>
+        <tr><td><input type="submit" value="Verstuur"></td><td><input type="reset" value="Annuleren"></td></tr>
+    </table> 
+</fieldset>
+<br>
+<br>
+<hr>
+<br>
+<h2>Opdracht 8</h2> 
+<fieldset>
+    <legend>Boekhandel</legend> 
+    <table>
+        <tr><td><for="fname">Achternaam:</td><td><input type="text" id="fname" name="fname" value=" Achternaam"></td></tr>
+        <tr><td><for="lname">Voornaam:</td><td><input type="text" id="lname" name="lname" value=" Voornaam"></td></tr>
+        <tr><td><for="tel">Telefoonnr.:</td><td><input type="text" id="tel" name="tel" value=" tel.nr."></td></tr>
+        <tr><td><for="email">Email:</td><td><input type="text" id="email" name="email" value=" Email"></td></tr>
+        <tr><td><for="titel">Titel:</td><td><input type="text" id="titel" name="titel" value=" Titel"></td></tr>
+        <tr><td><for="Example">Exemplaren:</td><td><input type="number"></td></tr>
+        <tr><td><input type="submit" value="Verstuur"></td><td><input type="reset" value="Annuleren"></td></tr>
+    </table> 
+</fieldset>
+<br>
+<hr>
+<br>
+<h2>Opdracht 9</h2> 
+<fieldset>
+    <legend>Sportschool</legend> 
+    <table>
+        <tr><td><for="fname">Achternaam:</td><td><input type="text" id="fname" name="fname" value=" Achternaam"></td></tr>
+        <tr><td><for="lname">Voornaam:</td><td><input type="text" id="lname" name="lname" value=" Voornaam"></td></tr>
+        <tr><td><for="email">Email:</td><td><input type="text" id="email" name="email" value=" Email"></td></tr>
+        <tr><td><for="Date">Datum:</td><td><input type="text" id="date" name="date" value=" dd / mm / jjjj"></td></tr
+        <tr><td><for="membership">Membership:</td><td>Yes:<input type="radio"> No:<input type="radio"></td></tr>
+        <tr><td><for="Membershipnumber">Membershipnummer:</td><td><input type="text" id="membershipnummer" name="membershipnummer" value=" Membershipnummer"></td></tr>
+        <tr><td><label for="country">Sportlessen</label></td><td><select id="country" name="country">
+              <option value="Lijst 1">Tafeltennis</option>
+              <option value="Lijst 2">Badminton</option>
+              <option value="Lijst 3">Squash</option>
+              <option value="Lijst 1">Klimmen</option>
+              <option value="Lijst 2">Boxen</option>
+              <option value="Lijst 3">Personal Training</option>              
+              <option value="Lijst 1">X-Co</option>
+              <option value="Lijst 2">Bodypump</option>
+              <option value="Lijst 3">Yoga</option>
+            </select></td></tr>
+            <tr><td><towels">Handdoeken:</td><td><input type="number"></td></tr>
+        <tr><td><for="check">Akkoord:</td><td><input type="checkbox"></td></tr>
+        <tr><td><input type="submit" value="Verstuur"></td><td><input type="reset" value="Annuleren"></td></tr>
+    </table> 
+</fieldset>
+<br>
+<br>
+<hr>
+<br>
+<h2>Opdracht 11</h2> 
+<fieldset>
+<legend>Tabel</legend>
+    <table>
+        <thead>
+            <tr>
+                <th>Voornaam</th>
+                <th>Achternaam</th>
+                <th>Leeftijd</th>
+                <th>Telefoonnr</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>41</td>
+                <td>+3112345678</td>
+            </tr>
+            <tr>
+                <td>Steven</td>
+                <td>Smith</td>
+                <td>32</td>
+                <td>+3112345678</td>
+            </tr>
+            <tr>
+                <td>Alexander</td>
+                <td>Beave</td>
+                <td>16</td>
+                <td>+3112345678</td>
+            </tr>
+        </tbody>
+    </table>
+</fieldset>
+<br>
+<br>
+<hr>
+<br>
+<h2>Opdracht 12</h2> 
+<fieldset>
+<legend>Agenda</legend>
+    <table>
+        <thead>
+            <tr>
+                <th>MA</th>
+                <th>DI</th>
+                <th>WO</th>
+                <th>DO</th>
+                <th>VR</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Afspraak</td>
+                <td>Afspraak</td>
+                <td>Vergadering</td>
+                <td>Afspraak</td>
+                <td>Dinner</td>
+            </tr>
+            <tr>
+                <td>Vergadering</td>
+                <td>Vergadering</td>
+                <td>Afspraak</td>
+                <td>Afspraak</td>
+                <td>Vergadering</td>
+            </tr>
+            <tr>
+                <td>Lunch</td>
+                <td>Brunch</td>
+                <td>Lunch</td>
+                <td>Lunch</td>
+                <td>Brunch</td>
+            </tr>
+            <tr>
+                <td>Vergadering</td>
+                <td>Sporten</td>
+                <td>Vergadering</td>
+                <td>Sporten</td>
+                <td>Sporten</td>
+            </tr>
+            <tr>
+                <td>Dinner</td>
+                <td>Dinner</td>
+                <td>Dinner</td>
+                <td>Dinner</td>
+                <td>Dinner</td>
+            </tr>
+        </tbody>
+    </table>
+</fieldset>
+<br>
+<br>
+<hr>
+<br>
+<h2>Opdracht 13</h2>
+<fieldset>
+    <legend>Col & Row Span</legend>
+<table> 
+<thead>
+    <tr> 
+        <th></th>
+        <th>Sport</th> 
+        <th>Antal recreanten</th>
+        <th>Antal competitie spelers</th>
+        <th>Totaal deelnemers</th>
+    </tr> 
+</thead>
+    <tr> 
+        <th rowspan="3">Racket Sport</th> 
+        <th>Badminton</th> 
+        <td>10</td> 
+        <td>30</td> 
+        <td>40</td> 
+    </tr> 
+    <tr> 
+        <th>Tafeltennis</th> 
+        <td>59</td> 
+        <td>30</td> 
+        <td>89</td> 
+    </tr> 
+    <tr> 
+        <th>Tennis</th> 
+        <td>159</td> 
+        <td>130</td> 
+        <td>189</td> 
+    </tr> 
+    <tr> 
+        <th rowspan="1">Tennis</th> 
+        <td></td>
+        <td>159</td> 
+        <td>130</td> 
+        <td>189</td> 
+    </tr> 
+    <tr> 
+        <th rowspan="3">Ball Sport</th> 
+        <th>Voetbal</th> 
+        <td>88</td> 
+        <td>40</td>
+        <td>128</td>
+    </tr> 
+    <tr> 
+        <th>Basketbal</th> 
+        <td>60</td> 
+        <td>40</td>
+        <td>100</td>
+    </tr> 
+    <tr> 
+        <th>Volleybal</th> 
+        <td>35</td> 
+        <td>20</td>
+        <td>55</td>
+    </tr> 
+</table>
+</fieldset>
+<br>
+<br>
+<hr>
+<br>
+<h2>Opdracht 14</h2>
+<fieldset>
+    <legend>Col & Row Span</legend>
+<table> 
+<thead>
+    <tr> 
+        <th></th>
+        <tH></tH>
+        <th>HTML Deelnemers</th> 
+        <th>CSS Deelnemers</th>
+        <th>Javascript Deelnemers</th>
+        <th>Python Deelnemers</th>
+    </tr> 
+</thead>
+    <tr> 
+        <th rowspan="3">Cohort1</th> 
+        <th>Week1</th> 
+        <td>10</td> 
+        <td>20</td> 
+        <td>10</td> 
+        <td>15</td>
+    </tr> 
+    <tr> 
+        <th>Week2</th> 
+        <td>19</td> 
+        <td>20</td> 
+        <td>19</td> 
+        <td>17</td>
+    </tr> 
+    <tr> 
+        <th>Week3</th> 
+        <td>19</td> 
+        <td>10</td> 
+        <td>19</td> 
+        <td>09</td>
+    </tr> 
+    <tr> 
+        <th rowspan="3">Cohort2</th> 
+        <th>Week1</th> 
+        <td>10</td> 
+        <td>20</td> 
+        <td>20</td> 
+        <td>16</td>
+    </tr> 
+    <tr> 
+        <th>Week2</th> 
+        <td>19</td> 
+        <td>20</td> 
+        <td>19</td> 
+        <td>04</td>
+    </tr> 
+    <tr> 
+        <th>Week3</th> 
+        <td>19</td> 
+        <td>10</td> 
+        <td>19</td> 
+        <td>17</td>
+    </tr> 
+    <tr> 
+        <th rowspan="3">Cohort3</th> 
+        <th>Week1</th> 
+        <td>10</td> 
+        <td>20</td> 
+        <td>10</td> 
+        <td>08</td>
+    </tr> 
+    <tr> 
+        <th>Week2</th> 
+        <td>19</td> 
+        <td>30</td> 
+        <td>19</td> 
+        <td>18</td>
+    </tr> 
+    <tr> 
+        <th>Week3</th> 
+        <td>19</td> 
+        <td>10</td> 
+        <td>19</td> 
+        <td>14</td>
+    </tr> 
+    </tr> 
+</table>
+</fieldset>
+<br>
+<br>
+<hr>
+<br>
+</body>
+</html>
