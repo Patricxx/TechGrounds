@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 7</title>
+</head>
+<style>
+article p::first-line {
+    font-size: 120%;
+    font-weight: bold;
+}  
+</style>
+<body>
+<pre>
+    <h3>Pseudo-elementen Selector</h3>
+    Pseudo-elementen gedragen zich op een vergelijkbare manier, maar ze gedragen zich alsof u een geheel 
+    nieuw HTML-element aan de opmaak heeft toegevoegd, in plaats van een klasse toe te passen op bestaande 
+    elementen. Pseudo-elementen beginnen met een dubbele dubbele punt ::.
+
+    Als u bijvoorbeeld de eerste regel van een alinea wilt selecteren, kunt u deze in een span-element 
+    plaatsen en een elementenselector gebruiken; dat zou echter mislukken als het aantal woorden dat u 
+    had ingepakt langer of korter was dan de breedte van het bovenliggende element. Omdat we meestal niet 
+    weten hoeveel woorden op een regel passen - zoals dat verandert als de schermbreedte of lettergrootte 
+    verandert - is het onmogelijk om dit krachtig te doen door HTML toe te voegen.
+
+    Pseudo-klassen zijn sleutelwoorden die beginnen met een dubbele punt:
+
+    <i>::pseudo-element-name/i>
+
+    <b>De volgende eigenschappen zijn van toepassing op het :: first-line pseudo-element:</b> 
+    • Font properties
+    • Color properties
+    • Background properties
+    • Word-spacing
+    • Letter-spacing
+    • Text-decoration
+    • Vertical-align
+    • Text-transform
+    • Line-height
+    • Clear
+
+
+
+    Hier een voorbeeld van een <b>Pseudo-elementen Selector</b>.
+
+<article>
+    <h3>Paragraaf Pseudo-elementen Selector</h3>
+    <p>ipsum dolor sit amet, consectetuer adipiscing elit.
+    Aenean commodo ligula eget dolor.</p>
+    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+    <p>Donec quam felis, ultricies nec, <strong>pellentesque eu</strong>, pretium quis, sem.</p>
+    Nulla consequat massa quis enim. 
+    <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+</article>
+
+    article p::first-line {
+        font-size: 120%;
+        font-weight: bold;
+    }  
+
+    <input type="button" value="Terug" onClick="history.back()">
+</pre>
+</body>
+</html>

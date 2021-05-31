@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 6</title>
+</head>
+<style>
+    div > p {
+        background-color: red;
+      }
+
+    div ~ p {
+        background-color: blue;
+      }
+
+    div + p {
+        background-color: green;
+      }
+</style>
+<body>
+<pre>
+    <h1>Opdracht 6</h1>
+    <b>Verder heb je ook nog de volgende selectors:</b>
+    • Child Selectors
+    • General selectors
+    • Adjacent Selectors
+
+    Maak in een aparte html bestand voor elke selector een voorbeeld en maak een link in je antwoord naar dat html bestand. 
+    Geef in je antwoord ook aan wat de voordelen zijn van elk selector.
+
+    <h3>Child Selector</h3>
+    De childselector selecteert alle elementen die de kinderen zijn van een gespecificeerd element.
+    In het volgende voorbeeld worden alle p-elementen geselecteerd die onderliggende elementen zijn van een div-element:
+
+    div > p {
+        background-color: red;
+      }
+
+    <h3>General Selector</h3>
+    De algemene sibling selector selecteert alle elementen die siblings zijn van een gespecificeerd element.
+    In het volgende voorbeeld worden alle p-elementen geselecteerd die broers of zussen zijn van div-elementen: 
+
+    div ~ p {
+        background-color: blue;
+      }
+
+    <h3>Adjacent Selector</h3>
+    De aangrenzende sibling-selector wordt gebruikt om een ​​element te selecteren dat zich direct na een ander specifiek element bevindt.
+    Elementen op hetzelfde niveau moeten hetzelfde bovenliggende element hebben en "aangrenzend" betekent "onmiddellijk volgend".
+    In het volgende voorbeeld wordt het eerste p-element geselecteerd dat onmiddellijk na  div-elementen wordt geplaatst:
+
+    div + p {
+        background-color: green;
+      }
+</pre>
+<div>
+  <p><b>Paragraaf Selector</b></p>
+  <section><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p></section>
+  <p>Aenean commodo ligula eget dolor. Aenean massa.</p>
+</div>
+  <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+<div>
+    <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+</div>
+  <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+  <p>  In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+
+  <input type="button" value="Terug" onClick="history.back()">
+</body>
+</html>

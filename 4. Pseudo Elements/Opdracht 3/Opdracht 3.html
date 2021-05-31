@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 3</title>
+</head>
+<style>
+    ::selection {
+    color: red; 
+    background: yellow;
+    }
+
+    ::marker { 
+    color: red;
+    }
+
+    p::first-letter {
+    font-size: 200%;
+    color: blue;
+    }
+
+    p::first-line {
+    background-color: yellow;
+    }
+
+    p::after {
+        content: " - Test Voorbeeld"
+    }
+
+    video::backdrop {
+        background-color: blue;
+    }
+
+    q::before { content: " Test Voobeeld - "
+
+    }
+
+</style>
+
+<body>
+<pre>
+    <h1>Opdracht 3</h1>
+    Er zijn aldus 14 verschillende pseudo elementen. 
+    Je hebt ze in de voorgaande opdracht reeds opgezocht en uitgezocht wat ze doen. 
+    Kun je van al deze pseudo-elementen een voorbeeld maken?
+
+
+    <h3>::after (:after)</h3>
+    <p>Voorbeeld</p>
+
+    <h3>::backdrop</h3>
+    <video controls
+    src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+    poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
+    width="620">
+    Sorry, your browser doesn't support embedded videos.  Time to upgrade!
+    </video>
+
+    <h3>:before (:before)</h3>
+    <q>Voorbeeld</q>
+
+    <h3>::cue</h3>
+    background: green;
+
+    <h3>::cue-region</h3>
+
+
+    <h3>::first-letter (:first-letter)</h3>
+    <p>Mijn naam is Patrick.</p>
+    <p>Ik woon in Amsterdam</p>
+    <p>Ik doe een studie bij Techgrounds</p>
+
+    <h3>::first-line (:first-line)</h3>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+    Aenean commodo ligula eget dolor. Aenean massa. 
+    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+    Nulla consequat massa quis enim. 
+    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
+    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+
+    <h3>::file-selector-button</h3>
+
+
+    <h3>::grammar-error </h3>
+
+
+    <h3>::marker</h3> 
+    <ul>
+        <li>Tech</li>
+        <li>Computer</li>
+        <li>Apple</li>
+      </ul>
+      
+      <ol>
+        <li>Javascript</li>
+        <li>Python</li>
+        <li>CSS</li>
+      </ol>
+
+
+
+    <h3>::part()</h3> 
+
+
+    <h3>::placeholder</h3>
+
+
+    <h3>::selection</h3>
+    <h1>Test Voobeeld</h1>
+    <p>Test1</p>
+    <div>Test2</div>
+
+    <h3>::slotted()</h3>
+
+
+    <h3>::spelling-error</h3>
+
+
+    <h3>::target-text</h3>
+
+
+    <h3>Voorbeelden</h3>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements">Voorbeelden voor de de andere Pseudo-Elementen</a>
+    
+
+    <input type="button" value="Terug" onClick="history.back()">
+</pre>
+</body>
+</html>

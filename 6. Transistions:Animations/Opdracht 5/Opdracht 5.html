@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 5</title>
+</head>
+<style>
+.frame {
+    position: absolute;
+    left: 100px;
+    position: fixed;
+    width: 200px;
+    top: 100px;
+    left: 100px;
+}
+
+.image{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-style: inset;
+    border-width: 20px;
+    top: 100px;
+    left: 100px;
+}
+
+.box {
+    position: absolute;
+    display: inline-block;
+    background:rgb(35, 121, 143);
+    width: 200px;
+    height: 200px;
+    transition: 1s ease-in-out;
+    top: 120px;
+    left: 120px;
+}
+
+.frame:hover > .box {
+    transform: translate(200px, 150px)
+               rotate(20deg);
+}
+
+.frame:hover > .image {
+  background-color: red;
+  filter:opacity(50);
+}
+
+</style>
+<body></body>
+<pre>
+    <h1>Opdracht 5</h1>
+
+</pre>
+
+<div class="frame">
+    <div class="image"><img src="/Users/p.a.hemmers/Library/Mobile Documents/com~apple~CloudDocs/Tech Grounds Cohort 6_030521/Week 02/6. Transistions:Animations/Opdracht 5/angry-birds.jpg" alt="Angry Bird"></div> 
+    <div class="box"></div>
+</div>
+
+
+
+    
+
+
+<pre> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <input type="button" value="Terug" onClick="history.back()">
+</pre>
+</body>
+</html>

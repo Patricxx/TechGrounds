@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 6</title>
+</head>
+<style>
+body{
+ height:100vh;
+ margin:0;
+ display: grid;
+ place-items: center;
+ overflow: hidden;
+}
+
+.cards {
+    display: flex;
+
+    --distance: 4rem;
+}
+
+
+.card {
+    background: lightgray;
+    border-radius: 1rem; 
+    padding: 2rem;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    transition: 0.2s;
+}
+
+/* Distance */
+
+.card:not(:first-child) {
+    margin-left: (var --distance);
+}
+
+.card:hover,
+.card:focus-within{ 
+    transform: translateY(-1rem);
+}
+
+.card:hover ~ .card,
+.card:focus-within ~ .card {
+    transform: translateX(calc(var (--distance) * -1));
+    background: red;
+}
+
+
+</style>
+<body>
+<pre>
+    <h1>Opdracht 6</h1>
+    Zie het card deck in de handout. Kun jij deze zelf namaken? 
+    Je mag uiteraard weer je eigen creativiteit erop los laten.
+
+
+<div class="cards">
+    <div class="card">
+        <p>Article Sep 16, 2019</p>
+        <h2>Placeholder Title</h2>
+        <p>Author: Kim Sing</p>
+    </div>
+    <div class="card">
+        <p>Article Sep 16, 2019</p>
+        <h2>Placeholder Title</h2>
+        <p>Author: Kim Sing</p>
+    </div>
+    <div class="card">
+        <p>Article Sep 16, 2019</p>
+        <h2>Placeholder Title</h2>
+        <p>Author: Kim Sing</p>
+    </div>
+    <div class="card">
+        <p>Article Sep 16, 2019</p>
+        <h2>Placeholder Title</h2>
+        <p>Author: Kim Sing</p>
+    </div>
+    <div class="card">
+        <p>Article Sep 16, 2019</p>
+        <h2>Placeholder Title</h2>
+        <p>Author: Kim Sing</p>
+    </div>
+</div>
+
+
+
+    <input type="button" value="Terug" onClick="history.back()">
+</pre>
+</body>
+</html>

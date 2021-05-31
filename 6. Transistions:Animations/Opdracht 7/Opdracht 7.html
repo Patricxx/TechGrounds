@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 7</title>
+</head>
+<style>
+.container {
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: black;
+    width:400px;
+    height:400px;
+    position: fixed;
+    top: 250px;
+    left: 250px;
+}
+
+.shape {
+    box-sizing: border-box;
+    display:inline-block;
+    background-color: red;
+    width:200px;
+    height:200px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+
+    animation-name: Move;
+    animation-iteration-count: infinite;
+    animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-duration: 7s;
+}
+
+@keyframes Move {
+    0%    {transform: rotate(0deg);   animation-duration: 1s;}
+    12.5% {transform: rotate(45deg);  background-color: rgb(2, 216, 48);   border-top-left-radius: 0%; border-bottom-left-radius: 50%; border-bottom-right-radius: 50%; border-top-right-radius: 50%; animation-duration: 1s;}
+    37.5% {transform: rotate(90deg);  background-color: rgb(226, 213, 21); border-top-left-radius: 0%; border-bottom-left-radius: 50%; border-bottom-right-radius: 50%; border-top-right-radius: 0%; animation-duration: 1s;}
+    50%   {transform: rotate(135deg); background-color: rgb(233, 134, 4);  border-top-left-radius: 0%; border-bottom-left-radius: 0%; border-bottom-right-radius: 50%; border-top-right-radius: 0%; animation-duration: 1s;}
+    62.5% {transform: rotate(180deg); background-color: rgb(231, 0, 0);    border-top-left-radius: 0%; border-bottom-left-radius: 50%; border-bottom-right-radius: 50%; border-top-right-radius: 0%; animation-duration: 1s;}
+    75%   {transform: rotate(135deg); background-color: rgb(226, 0, 139);  border-top-left-radius: 0%; border-bottom-left-radius: 50%; border-bottom-right-radius: 0%; border-top-right-radius: 0%; animation-duration: 1s;}
+    82.5% {transform: rotate(90deg);  background-color: rgb(157, 0, 219);  border-top-left-radius: 50%; border-bottom-left-radius: 0%; border-bottom-right-radius: 50%; border-top-right-radius: 50%; animation-duration: 1s;}
+    100%  {transform: rotate(45deg);  background-color: rgb(38, 0, 143);   animation-duration: 1s;
+}
+
+
+</style>
+
+<body>
+    <pre>
+    <h1>Opdracht 7</h1>
+    Zie de animatie in de handout en probeer deze na te maken. 
+    Hier is gebruik gemaakt van keyframe animatie.
+
+    <div class="container">
+        <div class="shape"></div>
+    </div>
+
+
+
+    <input type="button" value="Terug" onClick="history.back()">
+</pre>
+</body>
+</html>

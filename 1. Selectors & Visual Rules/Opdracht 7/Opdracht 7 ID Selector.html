@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 7</title>
+</head>
+<style>
+#one {
+    background-color: red;
+}
+
+h3#heading {
+    color: green;
+}
+</style>
+<body>
+<pre>
+    <h1>Opdracht 7</h1>
+
+    <h3>ID Selector</h3>
+    An ID selector begins with a # rather than a dot character, but is used in the same way as a class selector. 
+    However, an ID can be used only once per page, and elements can only have a single id value applied to them. 
+    It can select an element that has the id set on it, and you can precede the ID with a type selector to only 
+    target the element if both the element and ID match. You can see both of these uses in the following example:
+
+    Hier een voorbeeld van een <b>ID Selector</b>.
+
+    <h3 id="heading">Paragraaf ID Selector</h3>
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    Aenean commodo ligula eget dolor. 
+    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+    Donec quam felis, ultricies nec, <strong>pellentesque eu</strong>, pretium quis, sem. 
+    Nulla consequat massa quis enim. 
+    <p id="one">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+    <p id="one">In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+
+    #one {
+        background-color: yellow;
+    }
+    
+    h1#heading {
+        color: rebeccapurple;
+    }
+
+    <input type="button" value="Terug" onClick="history.back()">
+</pre>
+</body>
+</html>

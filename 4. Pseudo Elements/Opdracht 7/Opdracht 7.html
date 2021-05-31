@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 7</title>
+</head>
+<style>
+    .blok1, .blok2, .blok3 {
+        box-sizing: border-box;
+        position: absolute;
+        top: 150px;
+        left: 150px;
+        height: 150px;
+        width: 150px;
+        background-color: red;
+        }
+
+    .blok1::before, .blok2::before, .blok3::before{
+        content:'';
+        -webkit-box-sizing: rotate(30deg);
+                box-sizing: rotate(30deg);
+                transform: rotate(30deg);
+        position: absolute;
+        background-color: green;
+        width: 150px;
+        height: 150px;
+        bottom: 0;
+        right: 0;
+    }
+
+    .blok1::after, .blok2::after, .blok3::after{
+        content:'';
+        -webkit-box-sizing: rotate(60deg);
+                box-sizing: rotate(60deg);
+                transform: rotate(60deg);;
+        position: absolute;
+        background-color: blue;
+        width: 150px;
+        height: 150px;
+        top: 0;
+        left: 0;
+    }
+    </style>
+<body>
+<pre>
+    <h1>Opdracht 7</h1>
+    De laatste opdracht vergt wat creativiteit.
+    Maak het voorbeeld in de handout na.
+
+    <h2 class="blok1"> </h2>
+
+    <h2 class="blok2"> </h2>
+    
+    <h2 class="blok3"> </h2>
+
+
+
+
+
+
+
+    <input type="button" value="Terug" onClick="history.back()">
+</pre>
+</body>
+</html>

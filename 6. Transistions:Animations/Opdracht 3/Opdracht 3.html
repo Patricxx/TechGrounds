@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 3</title>
+</head>
+<style>
+.frame {
+    margin: 30px;
+    padding-top: 20px;
+    border: 1px solid black;
+    width: 1050px;
+    height: 560px;
+    }
+
+.box1 {
+    display: inline-block;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    transition: transform 3.5s ease-in-out;
+}
+
+.frame:hover > .box1{
+    transform: translate(900px);
+    border-radius: 50%;
+    background-color: red;
+}
+
+.box2 {
+    display: inline-block;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    transition: transform 3s ease-in;
+}
+
+.frame:hover > .box2{
+    transform: translate(900px);
+    border-radius: 10%;
+    background-color: red;
+}
+
+.box3{
+    display: inline-block;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    transition: transform 1s ease;
+}
+
+.frame:hover > .box3{
+    transform: translate(900px);
+    background-color: red;
+}
+
+.box4 {
+    display: inline-block;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    transition: transform 2s ease-out;
+
+}
+
+.frame:hover > .box4{
+    transform: translate(900px);
+    background-color: red;
+}
+
+.box5 {
+    display: inline-block;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    transition: transform 3s ease-in;
+    transition: 3s cubic-bezier(.76,1.19,.49,-0.8);
+}
+
+.frame:hover > .box5{
+    transform: translate(900px);
+    background-color: red;
+}
+
+</style>
+<body>
+<pre>
+    <h1>Opdracht 3</h1>
+    Transitions kent verschillende transition-timing. 
+    Zie hieronder een voorbeeld. Maak het na.
+
+<div class="frame">
+    <div class="box1">1</div>
+    <div class="box2">2</div> 
+    <div class="box3">3</div>
+    <div class="box4">4</div>
+    <div class="box5">5</div>
+</div>
+
+    <input type="button" value="Terug" onClick="history.back()">
+</pre>
+</body>
+</html>

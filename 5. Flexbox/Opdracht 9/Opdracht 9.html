@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 9</title>
+</head>
+<style>
+    * {
+    box-sizing: border-box;
+    }
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+}
+
+p{  font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color: black;
+}
+
+    .container{  
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: lightblue;
+    }
+
+    .columns{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 23.5%;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid blue;
+    background-color: white;
+    }
+
+    .gif {
+    Width: 100%;
+    object-fit: contain;
+    }
+
+    .text {
+    padding: 5px;
+    }
+
+    .button {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    width: 100%;
+    background-color: blue;
+    }
+
+    .button:hover {
+    background-color: red;
+    }
+
+</style>
+<body>
+<pre>
+    <h1>Opdracht 9</h1>
+    Zie het voorbeeld in de handout en maak het na met flexbox. 
+    Zorg voor een leuk effect als je met de muis over de ‘play’ knop heen gaat. 
+    Optioneel: gebruik .gif bestanden als images voor een levendig effect.
+</pre>
+
+<div class="container">
+    <div class= "columns">
+        <div class="gif">
+        <img src="https://media.giphy.com/media/l1IY5CmYbirEsXWPm/giphy.gif" alt="Super Mario Run" width="100%" height="50%">
+        </div>
+        <h2>Super Mario Run</h2>
+        <p class="text">
+            Een nieuw soort Super Mario-game,
+            die je met één hand kunt spelen! 
+            Je bestuurt Mario door het scherm 
+            aan te raken, terwijl hij 
+            automatisch door het level rent.
+        </p>
+        <div class="button">Play Super Mario Run</div>
+    </div>
+
+    <div class= "columns">
+        <div class="gif">
+        <img src="https://media.giphy.com/media/3ohfFphsG1OddclyA8/giphy.gif" alt="Mario Maker" width="100%" height="50%">
+        </div>
+        <h2>Mario Maker</h2>
+        <p class="text">
+            Steek de handen uit de mouwen en bouw
+            de Super Mario-levels waar je altijd 
+            al van hebt gedroomd in Super Mario 
+            Maker 2, exclusief voor de Nintendo 
+            Switch!
+        </p>
+        <div class="button">Play Mario Maker</div>
+    </div>
+
+    <div class= "columns">
+        <div class="gif">
+        <img src="https://media.giphy.com/media/l1KtXmfi3EnjM5zpK/giphy.gif" alt="Super Mario 3" width="100%" height="50%"">
+        </div>
+        <h2>Super Mario 3</h2>
+        <p class="text">
+            Super Mario Bros. 3 introduceert een 
+            tal van vooruitgangen t.o.v. het 
+            originele Super Mario Bros., zoals 
+            de toevoeging van een wereldmap, 
+            meer vijanden en level-types.
+        </p>
+        <div class="button">Play Super Mario 3</div>
+    </div>
+
+    <div class= "columns">
+        <div class="gif">
+        <img src="https://media.giphy.com/media/l1Kuh28roYRsKQRBS/giphy.gif" alt="Yoshi's Island" width="100%" height="50%">
+        </div>
+        <h2>Yoshi's Island</h2>
+        <p class="text">
+            Yoshi's Island is een spel waar elk 
+            level iets nieuws biedt, van vijanden 
+            tot uitdagingen. Dit houdt het spel 
+            door de hele speeltijd interessant 
+            en uitdagend!
+        </p>
+        <div class="button">Play Yoshi's Island</div>
+    </div>
+</div>
+
+
+
+<pre>
+    <input type="button" value="Terug" onClick="history.back()">
+</pre>
+</body>
+</html>

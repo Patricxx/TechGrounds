@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 1</title>
+</head>
+<style>
+div.static {
+  position: static;
+  border: 3px solid red;
+}
+
+div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid red;
+}
+
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid green;
+}
+
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid green;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid green;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: lightskyblue;
+  border: 2px solid blue;
+}
+</style>
+<body>
+<pre>
+    <h1>Opdracht 1</h1>
+    Welke position values zijn er? Leg voor elke position values uit wat het doet. 
+    Geef ook aan welke default position waarde elementen hebben die je gebruikt in html.
+
+    De positioneigenschap specificeert het type positioneringsmethode dat voor een element wordt gebruikt.
+
+    <b>Er zijn vijf verschillende positiewaarden:</b>
+    • Static
+    • Relative
+    • Fixed
+    • Absolute
+    • Sticky
+
+    <h3>Position: static;</h3>
+    HTML-elementen worden standaard statisch gepositioneerd.
+    Statisch geplaatste elementen worden niet beïnvloed door de eigenschappen boven, onder, links en rechts.
+    Een element met position: static;is niet op een speciale manier gepositioneerd; het wordt altijd gepositioneerd 
+    volgens het normale verloop van de pagina:
+
+    <div class="static">
+        Dit element heeft position: static;
+      </div>
+
+    <h3>Position: relative;</h3>
+    Een element met position: relative;is gepositioneerd ten opzichte van zijn normale positie.
+    Door de eigenschappen boven, rechts, onder en links van een relatief gepositioneerd element in te stellen, 
+    wordt het van zijn normale positie afgesteld. Andere inhoud wordt niet aangepast om te passen in een opening 
+    die door het element is achtergelaten.
+
+    <div class="relative">
+        Dit element heeft position: relative;
+        </div>
+
+    <h3>Position: fixed;</h3>
+    Een element met position: fixed;wordt ten opzichte van de viewport gepositioneerd, wat betekent dat het altijd 
+    op dezelfde plaats blijft staan, ook als de pagina wordt gescrolld. De eigenschappen boven, rechts, onder en 
+    links worden gebruikt om het element te positioneren.
+    Een vast element laat geen gat in de pagina waar het normaal gesproken zou zijn gelokaliseerd.
+    Let op het vaste element in de rechterbenedenhoek van de pagina. Hier is de CSS die wordt gebruikt:
+
+    <div class="fixed">
+        Dit element heeft position: fixed;
+        </div>
+
+    <h3>Position: absolut;</h3>
+    Een element met position: absolute;is gepositioneerd ten opzichte van de dichtstbijzijnde gepositioneerde voorouder 
+    (in plaats van gepositioneerd ten opzichte van de viewport, zoals vast).
+    Echter; als een absoluut gepositioneerd element geen gepositioneerde voorouders heeft, gebruikt het de hoofdtekst 
+    van het document en beweegt het mee met het scrollen van de pagina.
+
+    <div class="relative">This div element has position: relative;
+        <div class="absolute">This div element has position: absolute;</div>
+      </div>
+
+    <h3>Positie: sticky;</h3>
+    Een element met position: sticky;wordt gepositioneerd op basis van de scrollpositie van de gebruiker.
+    Een plakkerig element wisselt tussen relativeen fixed, afhankelijk van de scrollpositie. 
+    Het wordt relatief gepositioneerd totdat een bepaalde offset-positie wordt bereikt in de viewport - 
+    dan blijft het op zijn plaats "plakken" (zoals positie: vast).
+
+    <div class="sticky">Ik ben sticky!</div>
+
+
+    <div style="padding-bottom:2000px">
+        In dit voorbeeld blijft het sticky-element bovenaan de pagina plakken (top: 0), wanneer je de scroll-positie bereikt.
+        Scroll omhoog om de stickyness te verwijderen.
+        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum,
+        altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. 
+        Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, 
+        altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. 
+        Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+      </div>
+
+    <input type="button" value="Terug" onClick="history.back()">
+</pre>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 4</title>
+</head>
+<style>
+
+.button1 {
+    box-sizing: border-box;
+    position: fixed;
+    text-align: center;
+    padding-top: 40px;
+    top: 150px;
+    left: 150px;
+    height: 100px;
+    width: 300px;
+    text-align: center;
+    }
+
+
+.button2 {
+    box-sizing: border-box;
+    position: fixed;
+    text-align: center;
+    padding-top: 40px;
+    top: 150px;
+    left: 150px;
+    height: 100px;
+    width: 300px;
+    text-align: center;
+    background-color: blue;
+    }
+
+/* vertical line */
+.button2::after {
+    content:'';
+    position: absolute;
+    background-color: green;
+    width: 10px;
+    height: 40px;
+    top: 0;
+    left: 0;
+}
+
+/* horizontal line */
+.button2::before{
+    content:'';
+    position: absolute;
+    background-color: green;
+    width: 40px;
+    height: 10px;
+    top: 0;
+    left: 0;
+}
+
+/* vertical line */
+.button1::after {
+    content:'';
+    position: absolute;
+    background-color: green;
+    width: 10px;
+    height: 40px;
+    bottom: 0;
+    right:  0;
+}
+
+/* horizontal line */
+.button1::before{
+    content:'';
+    position: absolute;
+    background-color: green;
+    width: 40px;
+    height: 10px;
+    bottom: 0;
+    right: 0;
+}
+
+</style>
+<body>
+<pre>
+    <h1>Opdracht 4</h1>
+    Hieronder vind je een voorbeeld van het gebruik van een pseudo-element. Kun jij dit namaken?
+
+
+    <h2 class="button2">Button</h2>
+    <h2 class="button1"> </h2>
+
+    <input type="button" value="Terug" onClick="history.back()">
+</pre>
+</body>
+</html>
